@@ -1,2 +1,198 @@
 @import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
 
+body{
+    margin: 0;
+    color: #3B484A;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    color: #333E40;
+    box-shadow: 0px 0 21px -18px rgba(0, 0, 0, 0.75);
+  }
+
+  header nav ul {      
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .nav-list-item {    
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;   
+    border-radius: 10px; 
+  }
+
+  .nav-list-item:hover{
+        background-color: #FFCE1C;
+  }
+
+  .nav-list-item a{      
+    color: #333E40;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .logo{
+      display: flex;
+      justify-content: space-between;
+      justify-items: stretch;
+  }
+
+  .logo a{
+    display: flex;
+  }
+
+  .logo a>img{
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+  }
+
+  .logo a{
+    text-decoration: none;
+    color: #333E40; 
+  }
+
+  .logo a>h1{ 
+    font-size: 2rem;
+    text-decoration: none;
+    align-self: center;
+    margin: 0;
+  }
+
+  .background-img{
+      max-width: 1rem;
+      height: 10%;   
+  }
+
+  .background-img img{
+    height: 400px;
+    opacity: 0.1;
+    position: relative;
+    left: -70px;
+    bottom: -70px;
+  }
+
+  .user-forms{
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      margin: 20px auto;
+      padding: 15px 5%;
+  }
+
+  .user-form{
+    position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-basis: 40%;
+      border-radius: 20px;
+      box-shadow: 0px 0 21px -18px rgba(0, 0, 0, 0.75);
+      margin: 0px 30px;
+  }
+
+  .user-form img{
+      max-width: 40%;
+      background-color: white;
+      padding: 10%;
+  }
+
+.user-form button{
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 60px;
+    margin: 20px 0px;
+    border: none;
+    font-weight: bold;
+}
+
+.bee-btn{
+    background-color: #FFCE1C;
+}
+
+.bee-btn:hover{
+    background-color: #ffe999;
+}
+
+.bee-form{
+    border-top:2px solid #FFCE1C;
+}
+
+.flower-form{
+    border-top: 2px solid #FF9100;
+}
+
+.flower-btn{
+    background-color: #FF9100;
+}
+
+.flower-btn:hover{
+    background-color: #ffd399;
+}
+
+form{
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.form-container{
+    align-self: center;
+}
+
+
+input{
+    width: 85%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.line-box {
+    position: relative;
+    width: 90%;
+    height: 2px;
+    background: #BCBCBC;
+    margin: 10px auto;
+  }
+  
+.about{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 5%;
+    margin: 50px auto;
+}
+
+.about article{
+    margin: 20px 40px;
+}
+
+.about article img{
+    max-width: 100px;
+    align-self: center;
+}
+
+footer{
+    background-color: #333E40;
+    color: lightgray;
+    min-height: 50px;
+    padding: 20px;
+}
+footer p{
+    margin-top: 10;    
+    text-align: center;
+}
