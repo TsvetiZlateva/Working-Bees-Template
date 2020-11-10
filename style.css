@@ -158,6 +158,7 @@ header {
       align-items: stretch;
       margin: 20px auto;
       padding: 15px 5%;
+      
   }
 
   .user-form{
@@ -212,32 +213,6 @@ header {
 .bee-btn:hover{
     background-color: #ffd399;
 }
-
-form{
-    display: flex;
-    width: 90%;
-    align-items: center;
-}
-
-.form-container{
-    align-self: center;
-}
-
-
-input{
-    width: 85%;
-    background: transparent;
-    border: none;
-    outline: none;
-}
-
-.line-box {
-    position: relative;
-    width: 90%;
-    height: 2px;
-    background: #BCBCBC;
-    margin: 10px auto;
-  }
   
 .about{
     width: 100%;
@@ -291,3 +266,43 @@ footer p{
 }
 
 /* Login Form  */
+.login{
+background-color: #fffbe6;
+padding: 30px;
+}
+
+.login p>a{
+    color: #FAA330;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.user-form img{
+    border: 3px solid #FAA330;
+    border-radius: 50%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-input{
+    width: 300px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #BCBCBC;
+    outline: none;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
