@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working Bees</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico?v=2" />
 </head>
 
 <body>
@@ -60,7 +62,7 @@
 
             <!-- Search form -->
             <section class="search">
-                <h2>Find a job now!</h2>
+                <h2>Find a job now! <a href="#">Advanced Search</a></h2>
                 <section class="search-container">
                     <form action="#" class="search-form">
                         <div class="col-lg- col-md-3 col-sm-12 p-1">
@@ -83,13 +85,32 @@
                             </select>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            <button type="submit" class="search-button"><i class="fa fa-search"></i>Search</button>
+                            <button type="submit" class="search-button"><i class="fa fa-search"></i>Quick Search</button>
                         </div>
                     </form>
                 </section>
             </section>
 
+            <!-- Plain text -->
+            <section class="about">
+                <article>
+                    <h1>
+                        Plain text paragraph
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quibusdam doloribus numquam
+                        excepturi voluptatum nulla maxime culpa iure, perferendis, aliquam at expedita iste consectetur
+                        quam cum quisquam vel? Modi, culpa.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur officia eius facere
+                        deserunt reiciendis quis aperiam quam impedit tenetur. Placeat, quod reiciendis! Praesentium ab
+                        sapiente, quis distinctio voluptatem eveniet.
+                    </p>
+                </article>
+            </section>
 
+            <!-- User forms -->
             <section class="user-forms">
                 <article class="user-form bee-form">
                     <h1>I am a bee <br /> (employee!)</h1>
@@ -147,14 +168,15 @@
                 <button class="search-button">See all</button>
             </section>
 
-            <!-- Login Form -->
+            <hr>
 
+            <!-- Login Form -->
             <section class="user-forms">
                 <section class="user-form login">
-                    <img src="./images/cell.png" alt="">
+                    <img src="./images/cell.png" alt="Logo">
                     <form action="" class="login-form">
                         <div class="form-container">
-                            <label for="">Username</label>
+                            <label for="">Email</label>
                             <input type="text" class="login-input">
                         </div>
 
@@ -162,22 +184,632 @@
                             <label for="">Password</label>
                             <input type="text" class="login-input">
                         </div>
+
+
+                        <div class="custom-control custom-checkbox mb-3 ">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation2">
+                            <label class="custom-control-label" for="customControlValidation2">Remember me</label>
+                        </div>
                         <button type="submit" class="search-button">Login</button>
                     </form>
                     <p><a href="#">Forgot your password?</a></p>
-                    <p> Do not have an account? <a href="#">Sign Up</a>!</p>
-                    <p>Working Bees &copy; 2020</p>
-                    </form>
+                    <p> Do not have an account? <a href="#">Sign Up!</a></p>
+                    <p><small>Working Bees &copy; 2020</small></p>
                 </section>
-
             </section>
 
+            <hr>
+
+            <!-- Register Form -->
+            <section class="user-forms">
+                <section class="register-form">
+                    <!-- <img src="./images/cell.png" alt="Logo"> -->
+                    <article class="register-part">
+                        <form action="" class="login-form">
+                            <div class="form-container">
+                                <label for="">Email</label>
+                                <input type="text" class="login-input">
+                            </div>
+
+                            <div class="form-container">
+                                <label for="">Password</label>
+                                <input type="text" class="login-input">
+                            </div>
+
+                            <div class="form-container">
+                                <label for="">Repeat Password</label>
+                                <input type="text" class="login-input">
+                            </div>
+
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation1"
+                                    required>
+                                <label class="custom-control-label" for="customControlValidation1">Tearms and
+                                    Conditions</label>
+                                <div class="invalid-feedback">Example invalid feedback text</div>
+                            </div>
+
+                            <button type="submit" class="search-button">Register</button>
+                        </form>
+                    </article>
+                    <article class="register-info-part">
+                        <h3>Terms and conditions</h3>
+                        <p>By clicking on "Register" you agree to The Company's' Terms and Conditions</p>
+                        <p>Read Terms and Conditions <a href="#">here!</a></p>
+                        <h3>Cookie Policy</h3>
+                        <p>By clicking on "Register" you agree to The Company's' Terms and Conditions</p>
+                        <p>Read Terms and Conditions <a href="#">here!</a></p>
+                        <h3>Privacy Policy</h3>
+                        <p>By clicking on "Register" you agree to The Company's' Terms and Conditions</p>
+                        <p>Read Terms and Conditions <a href="#">here!</a></p>
+                    </article>
+                </section>
+            </section>
+
+            <hr>
+
+            <!-- Profile page -->
+            <div class="container bootstrap snippet">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h1>User name</h1>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <!--left col-->
+                        <div class="text-center">
+                            <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                                class="avatar img-circle img-thumbnail" alt="avatar">
+                            <h6>Upload a different photo...</h6>
+                            <br>
+                            <input type="file" class="text-center center-block file-upload">
+                        </div>
+                        </hr>
+                        <br>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Website <i class="fa fa-link fa-1x"></i></div>
+                            <div class="panel-body"><a href="http://somesite.com">somesite.com</a></div>
+                        </div>
+                        <br>
+
+                        <ul class="list-group">
+                            <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                            <li class="list-group-item text-right"><span
+                                    class="pull-left"><strong>Shares</strong></span> 125</li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span>
+                                13</li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span>
+                                37</li>
+                            <li class="list-group-item text-right"><span
+                                    class="pull-left"><strong>Followers</strong></span> 78</li>
+                        </ul>
+
+                        <br>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Social Media</div>
+                            <div class="panel-body">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-github-square"></i>
+                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-pinterest-square"></i>
+                                <i class="fab fa-google-plus-square"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/col-3-->
+                    <div class="col-sm-9">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Personal information</a></li>
+                            <li><a data-toggle="tab" href="#messages">Proffesional information</a></li>
+                            <li><a data-toggle="tab" href="#settings">Settings</a></li>
+                        </ul>
 
 
+                        <div class="tab-content">
+                            <!-- First tab -->
+                            <div class="tab-pane active" id="home">
+                                <hr>
+                                <form class="form" action="##" method="post" id="registrationForm">
+                                    <div class="form-group">
 
+                                        <div class="col-xs-6">
+                                            <label for="first_name">
+                                                <h4>First name</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="first_name" id="first_name"
+                                                placeholder="first name" title="enter your first name if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="last_name">
+                                                <h4>Last name</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="last_name" id="last_name"
+                                                placeholder="last name" title="enter your last name if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="phone">
+                                                <h4>Phone</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="phone" id="phone"
+                                                placeholder="enter phone" title="enter your phone number if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6">
+                                            <label for="mobile">
+                                                <h4>Mobile</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="mobile" id="mobile"
+                                                placeholder="enter mobile number"
+                                                title="enter your mobile number if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email">
+                                                <h4>Email</h4>
+                                            </label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="you@email.com" title="enter your email.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email">
+                                                <h4>Location</h4>
+                                            </label>
+                                            <input type="email" class="form-control" id="location"
+                                                placeholder="somewhere" title="enter a location">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password">
+                                                <h4>Password</h4>
+                                            </label>
+                                            <input type="password" class="form-control" name="password" id="password"
+                                                placeholder="password" title="enter your password.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password2">
+                                                <h4>Verify</h4>
+                                            </label>
+                                            <input type="password" class="form-control" name="password2" id="password2"
+                                                placeholder="password2" title="enter your password2.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <br>
+                                            <button class="btn btn-lg btn-success" type="submit"><i
+                                                    class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                            <button class="btn btn-lg" type="reset"><i
+                                                    class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <hr>
+
+                            </div>
+
+                            <!--Second tab-->
+                            <div class="tab-pane" id="messages">
+
+                                <h2></h2>
+
+                                <hr>
+                                <form class="form" action="##" method="post" id="registrationForm">
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="first_name">
+                                                <h4>First name</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="first_name" id="first_name"
+                                                placeholder="first name" title="enter your first name if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="last_name">
+                                                <h4>Last name</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="last_name" id="last_name"
+                                                placeholder="last name" title="enter your last name if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="phone">
+                                                <h4>Phone</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="phone" id="phone"
+                                                placeholder="enter phone" title="enter your phone number if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6">
+                                            <label for="mobile">
+                                                <h4>Mobile</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="mobile" id="mobile"
+                                                placeholder="enter mobile number"
+                                                title="enter your mobile number if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email">
+                                                <h4>Email</h4>
+                                            </label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="you@email.com" title="enter your email.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email">
+                                                <h4>Location</h4>
+                                            </label>
+                                            <input type="email" class="form-control" id="location"
+                                                placeholder="somewhere" title="enter a location">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password">
+                                                <h4>Password</h4>
+                                            </label>
+                                            <input type="password" class="form-control" name="password" id="password"
+                                                placeholder="password" title="enter your password.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password2">
+                                                <h4>Verify</h4>
+                                            </label>
+                                            <input type="password" class="form-control" name="password2" id="password2"
+                                                placeholder="password2" title="enter your password2.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <br>
+                                            <button class="btn btn-lg btn-success" type="submit"><i
+                                                    class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                            <button class="btn btn-lg" type="reset"><i
+                                                    class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <!--Third tab-->
+                            <div class="tab-pane" id="settings">
+
+
+                                <hr>
+                                <form class="form" action="##" method="post" id="registrationForm">
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="first_name">
+                                                <h4>First name</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="first_name" id="first_name"
+                                                placeholder="first name" title="enter your first name if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="last_name">
+                                                <h4>Last name</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="last_name" id="last_name"
+                                                placeholder="last name" title="enter your last name if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="phone">
+                                                <h4>Phone</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="phone" id="phone"
+                                                placeholder="enter phone" title="enter your phone number if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6">
+                                            <label for="mobile">
+                                                <h4>Mobile</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="mobile" id="mobile"
+                                                placeholder="enter mobile number"
+                                                title="enter your mobile number if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email">
+                                                <h4>Email</h4>
+                                            </label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="you@email.com" title="enter your email.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email">
+                                                <h4>Location</h4>
+                                            </label>
+                                            <input type="email" class="form-control" id="location"
+                                                placeholder="somewhere" title="enter a location">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password">
+                                                <h4>Password</h4>
+                                            </label>
+                                            <input type="password" class="form-control" name="password" id="password"
+                                                placeholder="password" title="enter your password.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password2">
+                                                <h4>Verify</h4>
+                                            </label>
+                                            <input type="password" class="form-control" name="password2" id="password2"
+                                                placeholder="password2" title="enter your password2.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <br>
+                                            <button class="btn btn-lg btn-success pull-right" type="submit"><i
+                                                    class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                            <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!--/tab-pane-->
+                    </div>
+                    <!--/tab-content-->
+
+                </div>
+                <!--/col-9-->
+            </div>
+            <!--/row-->
+
+            <hr>
+
+            <!-- ADVANCED SEARCH -->
+            <section class="extended-search-container">
+                <h1 style="text-align: center;">Advanced Search</h1>
+                <form action="#" class="advanced-search-form">
+                    <section class="search-filters-row">
+                        <div class="col-lg- col-md-3 col-sm-12 p-1">
+                            <input type="text" class="form-control search-slt" placeholder="Search in positions">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-1">
+                            <input type="text" class="form-control search-slt" placeholder="Search by keyword">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-1">
+                            <select class="form-control search-slt">
+                                <option>Location</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                                <option>Example one</option>
+                            </select>
+                        </div>
+
+                    </section>
+                    <section class="search-filters-row">
+                        <section>
+                            <article>
+                                <h3>Employment Type</h3>
+                            </article>
+                            <article>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1">
+                                    <label class="custom-control-label" for="customControlValidation1">Full-time</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation2">
+                                    <label class="custom-control-label" for="customControlValidation2">Part-time</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation3">
+                                    <label class="custom-control-label"
+                                        for="customControlValidation3">Contractor</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation4">
+                                    <label class="custom-control-label" for="customControlValidation4">Remote</label>
+                                </div>
+
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <h3>Seniority Level</h3>
+                            </article>
+                            <article>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="Intern">
+                                    <label class="custom-control-label" for="Intern">Intern</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="Junior">
+                                    <label class="custom-control-label" for="Junior">Junior</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="Middle">
+                                    <label class="custom-control-label" for="Middle">Middle</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 ">
+                                    <input type="checkbox" class="custom-control-input" id="Senior">
+                                    <label class="custom-control-label" for="Senior">Senior</label>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+                    <section class="search-filters-row">
+                        <section>
+                            <article>
+                                <h3>Industry</h3>
+                            </article>
+
+                            <article>
+
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Agriculture, Food and Natural Resources
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="1">
+                                                    <label class="custom-control-label" for="1">Full-time</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="2">
+                                                    <label class="custom-control-label" for="2">Part-time</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="3">
+                                                    <label class="custom-control-label" for="3">Contractor</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Architecture and Construction
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="4">
+                                                    <label class="custom-control-label" for="4">Full-time</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="5">
+                                                    <label class="custom-control-label" for="5">Part-time</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="6">
+                                                    <label class="custom-control-label" for="6">Contractor</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Arts, Audio/Video Technology and Communications
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="7">
+                                                    <label class="custom-control-label" for="7">Full-time</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="8">
+                                                    <label class="custom-control-label" for="8">Part-time</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-3 ">
+                                                    <input type="checkbox" class="custom-control-input" id="9">
+                                                    <label class="custom-control-label" for="9">Contractor</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+                    <section class="search-filters-row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="submit" class="search-button"><i class="fa fa-search"></i>Search</button>
+                        </div>
+                    </section>
+
+                </form>
+            </section>
+
+            <!-- Background image -->
             <article class="background-img">
                 <img src="./images/honey.png" alt="">
             </article>
+
         </main>
 
         <footer>
@@ -185,6 +817,15 @@
                 &copy; 2020 Working Bees
             </p>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
