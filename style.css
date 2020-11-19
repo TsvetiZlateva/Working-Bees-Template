@@ -9,8 +9,8 @@ html {
 
 body {
     margin: 0;
-    margin-bottom: 15%;
-    color: #3b484a;
+    color: #3b484a;    
+    margin-bottom:10%
 }
 
 header {
@@ -444,10 +444,14 @@ footer {
     display: flex;
     justify-content: center;
     background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)), url("../Images/vertical_honeycomb.jpg");
-    background-size: cover;
+    background-size: cover;    
+    margin-bottom: 100px;    
+    margin-top:20px;
 }
 
-
+.publish-job-form>article{    
+    width: 50%;
+}
 
 .publish-job-container{
     display: flex;
@@ -469,7 +473,7 @@ footer {
 .button{ 
     background: #ff9100;
     font-size: 18px;
-    border: none;
+    border: 3px solid #ff9100;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 10px;
@@ -482,4 +486,66 @@ footer {
 
     .button:hover {
         color: white;
+    }
+
+    .accordion-fit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .custom-checkbox{
+        margin-left:15px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    /* Job Info */
+
+    .job-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 10px;
+    }
+
+    .job-section{
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid #faa330;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .job-section img{
+        max-width: 70px;
+        margin-right: 10px;
+    }
+
+    .job-section h1{
+        color: #ff9100;
+        font-weight: bolder;
+        text-shadow: 1px 1px #DDDDDD;
+    }
+
+    .job-section i{
+        color: #ffce1c;
+        margin-right: 10px;
+    }
+
+    .button.save{
+        background-color: white;
+        border: 3px solid #ff9100;
+    }
+
+    .button.save:hover{
+        background-color: #ffe999;
+        color: black;
+        border: 3px solid  #ffe999;
     }
