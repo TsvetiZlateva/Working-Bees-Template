@@ -43,6 +43,10 @@
 <body>
     <main>
 
+        <input type="checkbox" name="first" id="1">
+        <input type="checkbox" name="first" id="2">
+        <input type="checkbox" name="first" id="1">
+        <input type="checkbox" name="first" id="2">
        
 
         <!-- About us -->
@@ -1128,6 +1132,15 @@
         <article class="background-img">
             <img src="./images/honey.png" alt="">
         </article>
+
+        <!-- Cookie -->
+        <div id="cookieConsent" class="alert alert-warning alert-dismissible fade show" role="alert">
+            <b>Do you like cookies?</b> &#x1F36A; We use cookies to understand how you use our site and to improve your experience. <a asp-area="" asp-controller="Home" asp-action="Privacy">Learn More</a>.
+        
+            <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close" data-cookie-string="@cookieString">
+                <span aria-hidden="true">Accept</span>
+            </button>
+        </div>
 
     </main>
 
